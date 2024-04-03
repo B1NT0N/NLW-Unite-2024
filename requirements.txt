@@ -1,3 +1,4 @@
 SQLAlchemy
 pytest
-flask
+Flask
+Flask-Cors
