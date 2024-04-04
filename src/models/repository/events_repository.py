@@ -31,9 +31,9 @@ class EventsRepository:
             with db_connection_handler as database:
                 event = {
                     database.session
-                        .query(Events)
-                        .filter(Events.id==event_id)
-                        .one()
+                    .query(Events)
+                    .filter(Events.id==event_id)
+                    .one()
                 }
                 return event
         except NoResultFound:
